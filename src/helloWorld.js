@@ -1,12 +1,28 @@
 let inputString = '';
-
-console.log("\n> Write something:");
+let isExit = false;
 
 process.stdin.on('data', inputStdin => {
     inputString = inputStdin.toString().trim();
 
-    console.log("\n> You entered the following text in the Input box:");
-    console.log(inputString);
+    if (isExit) {
+        if (inputString.toUpperCase() === 'Q') {
+            process.exit();    
+        } else {
+            console.log("\n---------------------------------");
+            message();
+        }
+    } else {
+        console.log("\n> You entered the following text:");
+        console.log(inputString);
 
-    process.exit();
+        console.log("\n> Press 'q' to exit:");
+        isExit = true;
+    }
 });
+
+function message() {
+    isExit = false;
+    console.log("\n> Write something:");
+}
+
+message();
