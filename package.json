@@ -1,0 +1,20 @@
+{
+  "name": "hr-10days-javascript",
+  "version": "1.0.0",
+  "description": "HackerRank Tutorials - 10 Days of JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evertonluiz00/hr-10days-javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evertonluiz00/hr-10days-javascript/issues"
+  },
+  "homepage": "https://github.com/evertonluiz00/hr-10days-javascript#readme"
+}
